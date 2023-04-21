@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities--border</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        .demo{
+            background-color: var(--mycolor014);
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: var(--mycolor015);
+            border: 2px solid var(--mycolor016);
+            display: inline-block;
+        }
+        .box01{
+            width: 200px;
+            height: 150px;
+            background-color: var(--mycolor015);
+            border: 2px solid var(--mycolor026);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="fs-3 fw-900">1.border</div>
+        <div class="box border"></div>
+        <div class="box border-top"></div>
+        <div class="box border-bottom"></div>
+        <div class="box border-start"></div>
+        <div class="box border-end"></div>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">2.border移除邊框</div>
+        <div class="box border"></div>
+        <div class="box border-0"></div>
+        <div class="box border-start-0"></div>
+        <div class="box border-end-0"></div>
+        <div class="box border-top-0 border-bottom-0"></div>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">3.border厚度和顏色</div>
+        <div class="box border"></div>
+        <div class="box border  border-secondary"></div>
+        <div class="box border border-5 border-warning"></div>
+        <div class="box border border-info"></div>
+        <div class="box border border-4 border-success"></div>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">4.border圓角</div>
+        <div class="box border"></div>
+        <div class="box border border-3 rounded "></div>
+        <div class="box border rounded-top"></div>
+        <div class="box border rounded-bottom"></div>
+        <div class="box border rounded-start"></div>
+        <div class="box border rounded-end"></div>
+        <div class="box border rounded-circle"></div>
+        <div class="box01 border rounded-pill"></div>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">5.文字顏色</div>
+        <p class="text-primary">文字顏色<a href="#" class="link-danger">超連結</a></p>
+        <p class="text-info">文字顏色</p>
+        <p class="text-secondary">文字顏色</p>
+        <p class="text-success">文字顏色</p>
+        <p class="text-warning">文字顏色</p>
+        <p class="text-dark">文字顏色</p>
+        <p class="text-bg-light">文字背景色</p>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">6.display</div>
+        <div class="p-2 text-bg-info mb-2">對照</div>
+        <div class="p-2 text-bg-info mb-2 d-inline">d-inline</div>
+        <div class="p-2 text-bg-info mb-2 d-inline">d-inline</div>
+        <div class="p-2 text-bg-info mb-2 d-inline">d-inline</div>
+        <hr>
+        <span class="p-2 text-bg-info d-inline ">d-inline</span>
+        <span class="p-2 text-bg-info mt-3 d-block">d-block</span>
+        <hr>
+        <div class="text-bg-warning d-none d-xl-block">手機消失 PC出現</div>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">7.文字互動(複製)</div>
+        <p class="user-select-all">頻道有一討論家園你知道，投票。</p>
+        <p class="user-select-auto">頻道有一討論家園你知道，投票。</p>
+        <p class="user-select-none">頻道有一討論家園你知道，投票。</p>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-900">8.overflow</div>
+        <div class="box">鈴聲答案最後晚上忍不住加油再說保障歌詞生產又是自由百姓，帶來機制有些篇文章忘記付款人事更好斗內知道總經理點評，總算保密看出，一方面恢復這款證件西方聲音不同，一。</div>
+        <div class="box overflow-auto">鈴聲答案最後晚上忍不住加油再說保障歌詞生產又是自由百姓，帶來機制有些篇文章忘記付款人事更好斗內知道總經理點評，總算保密看出，一方面恢復這款證件西方聲音不同，一。</div>
+        <div class="box overflow-visible">鈴聲答案最後晚上忍不住加油再說保障歌詞生產又是自由百姓，帶來機制有些篇文章忘記付款人事更好斗內知道總經理點評，總算保密看出，一方面恢復這款證件西方聲音不同，一。</div>
+        <div class="box overflow-hidden">鈴聲答案最後晚上忍不住加油再說保障歌詞生產又是自由百姓，帶來機制有些篇文章忘記付款人事更好斗內知道總經理點評，總算保密看出，一方面恢復這款證件西方聲音不同，一。</div>
+        <div class="box overflow-scroll">鈴聲答案最後晚上忍不住加油再說保障歌詞生產又是自由百姓，帶來機制有些篇文章忘記付款人事更好斗內知道總經理點評，總算保密看出，一方面恢復這款證件西方聲音不同，一。</div>
+        <hr>
+        <div class="text-bg-warning">
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled overflow-scroll">
+                <li class="p-2 text-nowrap">選單001 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單002 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單003 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單004 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單005 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單006 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單007 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單008 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單009 - 場所再次。</li>
+                <li class="p-2 text-nowrap">選單010 - 場所再次。</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="demo" style="height: 800px">
+        <div class="fs-3 fw-bold">固定元件</div>
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled overflow-scroll sticky-top">
+                <li class="p-2 text-nowrap text-bg-info me-1">選單001 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單002 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單003 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單004 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單005 - 場所再次。</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit excepturi reprehenderit maiores a iusto consequatur quos unde fuga. Dicta vel facere, libero corrupti excepturi minima aliquid autem vero animi natus dolorem dignissimos minus doloremque velit tempora dolores sit suscipit sed architecto esse nostrum laborum. Cumque alias accusantium aspernatur eius itaque architecto eaque ab quas inventore ducimus quod cum rerum molestias dolore sunt asperiores ea, non mollitia, libero omnis autem commodi id aperiam fugit? Corporis ex, reiciendis quae debitis ipsum laborum quod. Tempore fugit voluptas deserunt quas aliquid laborum repudiandae. Doloremque, commodi ullam culpa reprehenderit tempora iste laboriosam deserunt consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit excepturi reprehenderit maiores a iusto consequatur quos unde fuga. Dicta vel facere, libero corrupti excepturi minima aliquid autem vero animi natus dolorem dignissimos minus doloremque velit tempora dolores sit suscipit sed architecto esse nostrum laborum. Cumque alias accusantium aspernatur eius itaque architecto eaque ab quas inventore ducimus quod cum rerum molestias dolore sunt asperiores ea, non mollitia, libero omnis autem commodi id aperiam fugit? Corporis ex, reiciendis quae debitis ipsum laborum quod. Tempore fugit voluptas deserunt quas aliquid laborum repudiandae. Doloremque, commodi ullam culpa reprehenderit tempora iste laboriosam deserunt consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit excepturi reprehenderit maiores a iusto consequatur quos unde fuga. Dicta vel facere, libero corrupti excepturi minima aliquid autem vero animi natus dolorem dignissimos minus doloremque velit tempora dolores sit suscipit sed architecto esse nostrum laborum. Cumque alias accusantium aspernatur eius itaque architecto eaque ab quas inventore ducimus quod cum rerum molestias dolore sunt asperiores ea, non mollitia, libero omnis autem commodi id aperiam fugit? Corporis ex, reiciendis quae debitis ipsum laborum quod. Tempore fugit voluptas deserunt quas aliquid laborum repudiandae. Doloremque, commodi ullam culpa reprehenderit tempora iste laboriosam deserunt consequuntur?</p>
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled overflow-scroll sticky-bottom">
+                <li class="p-2 text-nowrap text-bg-info me-1">選單001 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單002 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單003 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單004 - 場所再次。</li>
+                <li class="p-2 text-nowrap text-bg-info me-1">選單005 - 場所再次。</li>
+            </ul>
+    </div> -->
+    <div class="demo bg-light">
+        <div class="fs-3 fw-bold">10.shadow</div>
+        <p class="p-3
+        text-bg-info rounded shadow">尷尬只是，他也在這。</p>
+        <p class="p-3
+        text-bg-info rounded shadow-sm">尷尬只是，他也在這。</p>
+        <p class="p-3
+        text-bg-info rounded shadow-lg">尷尬只是，他也在這。</p>
+    </div>
+    <div class="demo">
+        <div>11.sizing(W)</div>
+        <p class="p-3 text-bg-primary w-25">w-25</p>
+        <p class="p-3 text-bg-primary w-50">w-50</p>
+        <p class="p-3 text-bg-primary w-75">w-75</p>
+        <p class="p-3 text-bg-primary w-100">w-100</p>
+    </div>
+    <div class="demo" style="height: 180px">
+        <div>12.sizing(H)</div>
+        <p class="p-3 text-bg-light d-inline-block h-25">h-25</p>
+        <p class="p-3 text-bg-light d-inline-block h-50">h-50</p>
+        <p class="p-3 text-bg-light d-inline-block h-75">h-75</p>
+        <p class="p-3 text-bg-light d-inline-block h-100">h-100</p>
+    </div>
+    <div class="demo" style="height: 180px">
+        <div>13.vh&vw(註解)</div>
+        <!-- <p class="py-2 text-bg-danger vh-100">vh-100</p>
+        <p class="py-2 text-bg-danger vw-100">vw-100</p> -->
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-bold">14.text</div>
+        <p class="mt-2 text-start">掌握動態笑容這些刪。</p>
+        <p class="mt-2 text-center">掌握動態笑容這些刪。</p>
+        <p class="mt-2 text-end">掌握動態笑容這些刪。</p>
+        <hr>
+        <div class="fs-3">文字排版(頁面改變)</div>
+        <p class="text-md-center text-lg-start">掌握動態笑容這些刪。</p>
+    </div>
+    <div class="demo">
+        <div class="fs-3 fw-bold">15.vusibile</div>
+        <div class="box"></div>
+        <div class="box invisible"></div>
+        <div class="box visible"></div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
