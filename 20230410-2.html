@@ -26,7 +26,7 @@
         </div>
             <div class="box02 mt-3">
                 <label for="" class="form-label">帳號</label>
-                <input type="text" class="form-control" placeholder="請輸入帳號,字數5~10">
+                <input type="text" class="form-control" id="username" name="username" placeholder="請輸入帳號,字數5~10">
             </div>
             <div class="box02 mt-3">
                 <label for="password" class="form-label">密碼</label>
@@ -116,6 +116,9 @@
                 $.each($("input[name='blood':checked]"),function(){
                     blood.push($(this).val());
                 });
+
+                console.log($("#username").val());
+                $(".showmsg").html('<h2>帳號: ' + $("#username").val() + '</h2><h2>密碼: ' + $("#password").val() + '</h2><h2>生日: ' + $("#bday").val() + '</h2><h2>年齡:' + $("#age").val() + '歲</h2><h2>最高學歷: ' + $("#select_edu").val() + '</h2><h2>興趣: ' + interest.join('/') + '</h2><h2>血型: ' + myblood +'</h2>');
             });
         });
     </script>
