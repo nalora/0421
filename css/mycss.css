@@ -34,3 +34,6 @@
     padding: 30px;
     margin: 20px;
 }
+.list-group :hover{
+    background-color: var(--mycolor009);
+}
